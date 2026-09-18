@@ -1,0 +1,24 @@
+{
+  "name": "@app-relay/hub",
+  "version": "0.1.0",
+  "description": "Local WebSocket hub, CLI, and programmatic runner for universal-app-relay-harness.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "bin": {
+    "app-relay": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/cli.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
